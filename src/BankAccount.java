@@ -2,17 +2,17 @@
 public class BankAccount 
 {
 	private String name;
-	private double accNum;
+	private int accNum;
 	private double balance;
 	
-	public BankAccount(String accName, double accNumber)
+	public BankAccount(String accName, int accNumber)
 	{
 		name = accName;
 		accNum = accNumber;
 		balance = 0;
 	}
 	
-	public BankAccount(String accName, double accNumber, double accBalance)
+	public BankAccount(String accName, int accNumber, double accBalance)
 	{
 		name = accName;
 		accNum = accNumber;
@@ -37,7 +37,7 @@ public class BankAccount
 	
 	public String toString()
 	{	
-		return "balance:" + balance;
+		return "name:" +  name + "\tbalance:" + balance + "\taccNum:" + accNum;
 	}
 	
 }
