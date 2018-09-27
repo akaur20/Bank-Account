@@ -35,6 +35,9 @@ public class BankAccount
 		return balance;
 	}
 	
-	
+	public String toString()
+	{	
+		return "balance:" + balance;
+	}
 	
 }
